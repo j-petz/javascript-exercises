@@ -1,8 +1,10 @@
 const removeFromArray = function (arr, ...values) {
-    values.forEach((item) => {
-        arr.splice(arr.indexOf(item), 1);
-    });
-    return arr;
+    let newArr = arr;
+    for (item of values) {
+        let itemV = item;
+        newArr = newArr.filter((element) => element !== itemV);
+    }
+    return newArr;
 };
 
 // Do not edit below this line
