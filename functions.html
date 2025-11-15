@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<script>
+    function add7(num) {
+        return num + 7;
+    }
+    console.log(add7(10));
+
+    let add8 = (num) => num + 8;
+    console.log(add8(11));
+
+    function multiply(num1, num2) {
+        return num1 * num2;
+    }
+    console.log(multiply(9, 8));
+
+    let multiplyArrowFunction = (x, y) => x * y;
+    console.log(multiplyArrowFunction(7, 6));
+
+    function capitalize(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+    }
+    console.log(capitalize('abcd'));
+    console.log(capitalize('ABCD'));
+    console.log(capitalize('aBcD'));
+
+    let capitalizeArrowFunction = string => string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+    console.log(capitalizeArrowFunction("yeAH! Motherfucker!"));
+
+    function lastLetter(string) {
+        return string.charAt(string.length - 1);
+    }
+    console.log(lastLetter("abcd"));
+
+    let lastLetterArrowFunction = string => string.charAt(string.length - 1);
+    console.log(lastLetterArrowFunction("Hell yeah!"));
+</script>
+
+<body>
+
+</body>
+
+</html>

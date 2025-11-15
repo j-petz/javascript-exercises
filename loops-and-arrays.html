@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops and Arrays</title>
+</head>
+<script>
+    /* const testArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    function sumOfTripledEvens(array) {
+        const evenValues = array.filter((num) => num % 2 === 0);
+        const tripledValues = evenValues.map((evenValue) => evenValue * 3);
+        const sum = tripledValues.reduce((prevSum, currentValue) => prevSum + currentValue);
+        return sum;
+    }
+    console.log(sumOfTripledEvens(testArray));
+
+    let arr = [5, 2, 1, -10, 8];
+    function compareNumeric(a, b) {
+        if (a < b) return 1;
+        if (a === b) return 0;
+        if (a > b) return -1;
+    }
+    arr.sort(compareNumeric);
+    console.log(arr);
+
+    let arrToSort = ["HTML", "JavaScript", "CSS"];
+    function copyArrayAndSort(arr) {
+        return arr.slice().sort();
+    };
+    console.log(copyArrayAndSort(arrToSort));
+    console.log(arrToSort);
+
+    let arrToShuffle = [1, 2, 3];
+    function shuffle(arr) {
+        return arr.map((item, index) => {
+            let newIndex = Math.floor(Math.random() * arr.length);
+            arr.findIndex(() => index = newIndex);
+            console.log(`Number: ${item} | Index: ${index}`);
+        })
+    }
+    console.log(shuffle(arrToShuffle)); */
+
+    /* const repeatString = function (string, num) {
+        let currentString = "";
+        for (let i = 0; i < num; i++) {
+            currentString = currentString + string;
+        }
+        return currentString;
+    };
+    console.log(repeatString("hey", 3)); */
+
+    /* const reverseString = function (string) {
+        let stringArray = [];
+        for (let i = 0; i < string.length; i++) {
+            stringArray.push(string[i]);
+            console.log(stringArray);
+        }
+        let reversedString = stringArray.reverse().join('');
+        console.log(reversedString);
+    };
+    reverseString("hello"); */
+
+    /* let arr = [5, 6, 7, 8];
+    let testVariable = "bliblablubb";
+    let arrowFuntion = () => arr.map((item) => item);
+    console.log(arrowFuntion(testVariable)); */
+
+    const removeFromArray = function (arr, ...values) {
+        let newArr = arr;
+        for (item of values) {
+            let itemV = item;
+            newArr = newArr.filter(element => element !== itemV);
+            //console.log(newArr);
+        };
+        console.log(newArr);
+    };
+    removeFromArray([1, 2, 2, 3, 4, "bla"], 3, 2, "bla");
+</script>
+
+<body>
+
+</body>
+
+</html>
