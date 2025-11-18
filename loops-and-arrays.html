@@ -42,6 +42,7 @@
     }
     console.log(shuffle(arrToShuffle)); */
 
+    // EXERCISE 06
     /* const repeatString = function (string, num) {
         let currentString = "";
         for (let i = 0; i < num; i++) {
@@ -51,6 +52,7 @@
     };
     console.log(repeatString("hey", 3)); */
 
+    // EXERCISE 07
     /* const reverseString = function (string) {
         let stringArray = [];
         for (let i = 0; i < string.length; i++) {
@@ -62,12 +64,8 @@
     };
     reverseString("hello"); */
 
-    /* let arr = [5, 6, 7, 8];
-    let testVariable = "bliblablubb";
-    let arrowFuntion = () => arr.map((item) => item);
-    console.log(arrowFuntion(testVariable)); */
-
-    const removeFromArray = function (arr, ...values) {
+    // EXERCICE 08
+    /* const removeFromArray = function (arr, ...values) {
         let newArr = arr;
         for (item of values) {
             let itemV = item;
@@ -76,7 +74,29 @@
         };
         console.log(newArr);
     };
-    removeFromArray([1, 2, 2, 3, 4, "bla"], 3, 2, "bla");
+    removeFromArray([1, 2, 2, 3, 4, "bla"], 3, 2, "bla"); */
+
+    // EXERCISE 09
+    const sumAll = function (start, end) {
+        let arr = [];
+        if (start < 0 || end < 0 || !Number.isInteger(start) || !Number.isInteger(end)) {
+            console.log("ERROR");
+            return "ERROR";
+        } else if (start > end) {
+            for (let i = end; i <= start; i++) {
+                arr.push(i);
+                console.log(arr);
+            }
+        } else {
+            for (let i = start; i <= end; i++) {
+                arr.push(i);
+                console.log(arr);
+            }
+        }
+        let result = arr.reduce((accumulator, currentValue) => accumulator + currentValue);
+        console.log(result);
+    };
+    sumAll(1, 4);
 </script>
 
 <body>
