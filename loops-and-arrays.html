@@ -77,7 +77,7 @@
     removeFromArray([1, 2, 2, 3, 4, "bla"], 3, 2, "bla"); */
 
     // EXERCISE 09
-    const sumAll = function (start, end) {
+    /* const sumAll = function (start, end) {
         let arr = [];
         if (start < 0 || end < 0 || !Number.isInteger(start) || !Number.isInteger(end)) {
             console.log("ERROR");
@@ -96,7 +96,18 @@
         let result = arr.reduce((accumulator, currentValue) => accumulator + currentValue);
         console.log(result);
     };
-    sumAll(1, 4);
+    sumAll(1, 4); */
+
+    // EXERCISE 10
+    const leapYears = function (year) {
+        if (year % 4 == 0 && !(year % 100 == 0) || year % 400 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+
+    };
+    console.log(leapYears(2000));
 </script>
 
 <body>
