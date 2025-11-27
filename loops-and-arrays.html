@@ -7,6 +7,8 @@
     <title>Loops and Arrays</title>
 </head>
 <script>
+
+    // T.O.P: Loops & Arrays => Triple Evens
     /* const testArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     function sumOfTripledEvens(array) {
         const evenValues = array.filter((num) => num % 2 === 0);
@@ -14,25 +16,61 @@
         const sum = tripledValues.reduce((prevSum, currentValue) => prevSum + currentValue);
         return sum;
     }
-    console.log(sumOfTripledEvens(testArray));
+    console.log(sumOfTripledEvens(testArray)); */
 
-    let arr = [5, 2, 1, -10, 8];
+    // https://javascript.info/array-methods#tasks
+    // TASK 01: Camelize
+    /* function camelize(str) {
+        // DO AGAIN
+    }
+    camelize("background-color");
+    camelize("list-style-image");
+    camelize("-webkit-transition"); */
+
+    // TASK 02: Filter range
+    /* let arr = [5, 3, 8, 1];
+    function filterRange(arr, a, b) {        
+        let newArr = [];
+        arr.map( item => {            
+            if (item >= a && item <= b) {
+                newArr.push(item);
+            }
+        });
+        return newArr;
+    }
+    let filtered = filterRange(arr, 1, 4);
+
+    console.log( filtered );
+    console.log( arr ); */
+
+    // TASK 03: Filter range "in place"
+    /* let arr = [5, 3, 8, 1];
+    function filterRangeInPlace(arr, a, b) {
+        // DO AGAIN
+    }
+    filterRangeInPlace(arr, 2, 5); */ 
+    //console.log(arr); 
+
+    // TASK 04: Sort in decreasing order
+    /* let arr = [5, 2, 1, -10, 8];
     function compareNumeric(a, b) {
         if (a < b) return 1;
         if (a === b) return 0;
         if (a > b) return -1;
     }
     arr.sort(compareNumeric);
-    console.log(arr);
+    console.log(arr); */
 
-    let arrToSort = ["HTML", "JavaScript", "CSS"];
+    // TASK 05: Copy and sort array
+    /* let arrToSort = ["HTML", "JavaScript", "CSS"];
     function copyArrayAndSort(arr) {
         return arr.slice().sort();
     };
     console.log(copyArrayAndSort(arrToSort));
-    console.log(arrToSort);
+    console.log(arrToSort); */
 
-    let arrToShuffle = [1, 2, 3];
+    // TASK 06: Shuffle an array
+    /* let arrToShuffle = [1, 2, 3];
     function shuffle(arr) {
         return arr.map((item, index) => {
             let newIndex = Math.floor(Math.random() * arr.length);
@@ -42,6 +80,24 @@
     }
     console.log(shuffle(arrToShuffle)); */
 
+    // TASK 07: Filter unique array members
+    /* function unique(arr) {
+        let newArr = [];        
+        arr.map(item => {
+            if (!(newArr.includes(item))) {
+                newArr.push(item);
+            }
+        });
+        return newArr;
+    }
+
+    let strings = ["Hare", "Krishna", "Hare", "Krishna",
+    "Krishna", "Krishna", "Hare", "Hare", ":-O"
+    ];
+    console.log( unique(strings) ); */
+
+
+    // T.O.P.
     // EXERCISE 06
     /* const repeatString = function (string, num) {
         let currentString = "";
@@ -110,7 +166,7 @@
        console.log(leapYears(2000)); */
 
     // EXERCISE 11
-    const convertToCelsius = function (val) {
+    /* const convertToCelsius = function (val) {
         return Math.round(((val - 32) * 5 / 9) * 10) / 10;
     };
 
@@ -118,7 +174,7 @@
         return Math.round((val * 9 / 5 + 32) * 10) / 10;
     };
     console.log(convertToCelsius(100));
-    console.log(convertToFahrenheit(37.8));
+    console.log(convertToFahrenheit(37.8)); */
 </script>
 
 <body>
